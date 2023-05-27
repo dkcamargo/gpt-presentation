@@ -1,8 +1,19 @@
+require('dotenv').config()
+
 const express = require('express');
 const app = express();
+const openai = require('./openai')
 
-app.get('/', (request, response) => {
-    return response.send('OK');
+app.get('/', async (request, response) => {
+    return response.send(
+        
+        await openai.createCompletion({
+            model: "text-davinci-003",
+            prompt: "Say this is a test",
+            max_tokens: 7,
+            temperature: 0,
+          })          
+    );
 });
 
 app.listen(5000, () => {
