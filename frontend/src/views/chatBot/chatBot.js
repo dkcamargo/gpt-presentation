@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import './codeCommit.css'; // Import the CSS file for styling
+import './chatBot.css'; // Import the CSS file for styling
 
-function CodeCommit() {
+function ChatBot() {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/code/commit', {
+      const response = await fetch('http://localhost:5000/chatbot/faq', {
         method: 'POST',
-        body: JSON.stringify({ code: input1 }),
+        body: JSON.stringify({ message: input1 }),
         headers: {
           'Content-Type': 'application/json'
         }
@@ -65,4 +65,4 @@ function CodeCommit() {
   );
 }
 
-export default CodeCommit;
+export default ChatBot;

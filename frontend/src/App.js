@@ -1,3 +1,4 @@
+import ChatBot from './views/chatBot/chatBot';
 import CodeComment from './views/codeComments/codeComment';
 import CodeCommit from './views/codeCommit/codeCommit';
 import CodeUnit from './views/codeUnitTest/codeUnit';
@@ -13,6 +14,8 @@ function App() {
         <CodeUnit></CodeUnit>
         <h1>Commit Generator</h1>
         <CodeCommit></CodeCommit>
+        <h1>Chatbot</h1>
+        <ChatBot></ChatBot>
       </header>
       
     </div>
