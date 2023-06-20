@@ -60,6 +60,7 @@
 .svg-button {
     border: 0px;
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .submit-button {
@@ -74,5 +75,5 @@
 }
 
 .svg-button-disabled {
-    visibility: hidden;
+    opacity: 0%;
 }

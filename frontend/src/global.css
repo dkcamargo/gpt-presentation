@@ -59,7 +59,7 @@ html, body, #root, .App, .landing-wrap {
 .App main {
     display: block!important;
     justify-self: center;
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 
@@ -98,6 +98,9 @@ button {
     right: 0!important;
 }
 
+.slick-dots {
+    bottom: -48px!important;
+}
 
 @media(max-width: 600px) {
     #header img {
