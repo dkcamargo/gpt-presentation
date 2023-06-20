@@ -1,0 +1,78 @@
+.body, .prompt-wrap {
+    width: 100%;
+}
+
+.prompt-wrap form {
+    height: fit-content;
+    margin-bottom: -38px;
+}
+
+.prompt-text {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+    font-size: 24px;
+    resize: vertical;
+}
+.prompt-input::placeholder {
+    color: var(--dark-background);
+}
+.prompt-input {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-secondary);
+    border: 0px;
+    border-radius: 4px 4px 0px 0px;
+    min-height: 64px;
+    height: 256px;
+    transition: 0.8s;
+    padding-right: 40px;
+}
+.prompt-output::placeholder {
+    color: var(--dark-foreground);
+}
+.prompt-output {
+    background: var(--dark-background);
+    border-top: 1px solid var(--primary-color);
+    color: var(--dark-foreground);
+    border-radius: 12px 12px 4px 4px;
+    font-family: var(--font-code);
+    margin-top: -30px;
+    min-height: 80px;
+    height: 80px;
+    transition: 0.8s;
+    padding-bottom: 40px;
+    margin-bottom: -38px;
+    cursor: pointer;
+}
+
+.prompt-output-expanded {
+    height: 256px;
+}
+.prompt-input-collapsed {
+    height: 80px;
+}
+
+.svg-button:hover {
+    opacity: 0.9;
+}
+.svg-button {
+    border: 0px;
+    border-radius: 4px;
+}
+
+.submit-button {
+    position: relative;
+    top: -172px;
+    left: calc(100% - 32px - 4px);
+}
+.copy-button {
+    position: relative;
+    top: -3px;
+    left: calc(50% - 32px);
+}
+
+.svg-button-disabled {
+    visibility: hidden;
+}

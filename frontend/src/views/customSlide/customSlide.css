@@ -1,0 +1,23 @@
+.slide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-inline: auto;
+    background: var(--primary-color);
+    font-family: var(--font-primary);
+    font-weight: 300!important;
+    border-radius: 4px;
+    padding: 24px;
+    /* margin-inline: 107px; */
+}
+.slide h2{
+    font-family: var(--font-primary);
+    font-weight: 300!important;
+    color: var(--foreground);
+    font-size: 36px;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: start;
+}
