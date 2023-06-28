@@ -18,6 +18,7 @@
 
 /backend/node_modules
 /backend/yarn.lock
+/backend/.env
 
 # User-specific stuff
 .idea/**/workspace.xml
